@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+}
+
+.dark-mode {
+
+    background-color: black;
+    color: white;
+}
+#btn{
+    margin-left: 35% ;
+}
+</style>
+</head>
+<body>
+
+<h2>Toggle Btn</h2>
+<br>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore odio eius inventore! Deserunt rem repellat commodi magnam possimus vero laboriosam praesentium quae quod nam? Eius quod qui assumenda quos? Cupiditate.</p>
+<br><br>
+<button onclick="myFunction()" id="btn">Dark Mode</button>
+
+<script>
+function myFunction() 
+{
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+   
+}
+const btn = document.getElementById('btn');
+
+btn.addEventListener('click', function handleClick() {
+  btn.textContent = 'Light Mode';
+});
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

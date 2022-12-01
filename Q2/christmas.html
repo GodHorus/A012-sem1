@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 >This is the programm to get the christmas dates of the year 2022</h1>
+
+    <script>
+
+        today=new Date();
+        var Christmas=new Date(today.getFullYear(), 11, 25);
+        if (today.getMonth()==11 && today.getDate()>25)
+        {
+
+            Christmas.setFullYear(Christmas.getFullYear()+1);
+
+        }
+
+        var one_day=1000*60*60*24;
+
+        console.log(Math.ceil((Christmas.getTime()-today.getTime())/(one_day))+
+        '  is the christmas date for the year 2022!');
+
+        </script>
+
+
+</body>
+</html>
